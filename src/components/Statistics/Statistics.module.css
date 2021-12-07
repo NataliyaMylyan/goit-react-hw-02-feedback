@@ -1,0 +1,15 @@
+.goodValue,
+.neutralValue,
+.badValue,
+.totalValue,
+.positiveValue {
+  font-size: 20px;
+  color: #000080;
+}
+
+.totalValue,
+.positiveValue {
+  font-weight: 500;
+  font: 22px;
+  text-shadow: 5px 5px 10px #87ceeb;
+}
