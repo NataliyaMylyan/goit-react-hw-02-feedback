@@ -44,15 +44,14 @@ class App extends Component {
           </Section>
 
           <Section title="Statistics">
-            {total ? (
+            {!!total && (
               <Statistics
                 statistics={statistics}
                 total={total}
                 positiveFeedback={percentage}
               />
-            ) : (
-              <Notification message="There is no feedback" />
             )}
+            {!total && <Notification message="There is no feedback" />}
           </Section>
         </div>
       </>
